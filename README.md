@@ -11,7 +11,7 @@ This library is a proof of concept to show that with fairly simple methods we ca
 
 ## examining the structure of the nesting
 
-The library defines a new protocol, `__duck_arrays__`, that returns the type of each layer:
+The library defines a new protocol, `__duck_arrays__` (name may change), that returns the type of each layer:
 
 ```python
 import nested_duck_arrays.pint  # monkeypatches `pint.Quantity`
