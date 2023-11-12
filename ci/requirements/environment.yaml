@@ -1,0 +1,9 @@
+name: nested-duck-arrays-tests
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - ipython
+  - pre-commit
+  - pytest
+  - pytest-reportlog
