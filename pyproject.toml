@@ -1,9 +1,14 @@
 [project]
 name = "nested-duck-arrays"
-requires-python = ">= 3.10"
+requires-python = ">= 3.9"
 license = {text = "MIT"}
+authors = [{name = "Justus Magin", email = "keewis@posteo.de"}]
 dependencies = []
+readme = "README.md"
 dynamic = ["version"]
+
+[project.urls]
+repository = "https://github.com/keewis/nested-duck-arrays"
 
 [build-system]
 requires = ["setuptools>=64.0", "setuptools-scm"]
