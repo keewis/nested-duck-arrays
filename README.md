@@ -11,7 +11,7 @@ This library is a proof of concept to show that with fairly simple methods we ca
 
 ## examining the structure of the nesting
 
-The library defines a new protocol, `__duck_arrays__` (name may change), that returns the type of each layer:
+The library defines a new protocol, `__array_layers__`, that returns the type of each layer:
 
 ```python
 import nested_duck_arrays.pint  # monkeypatches `pint.Quantity`
@@ -26,7 +26,7 @@ ureg = pint.UnitRegistry()
 
 arr = sparse.COO.from_numpy(np.arange(10))
 q = ureg.Quantity(da.from_array(arr, chunks=(2,)), "m")
-q.__duck_arrays__()
+q.__array_layers__()
 # (pint.Quantity, dask.array.core.Array, sparse._coo.core.COO)
 ```
 
