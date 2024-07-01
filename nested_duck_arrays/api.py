@@ -20,7 +20,7 @@ def layers(x):
 
 
 def first_layer(x):
-    """extract the outermost layer of the duck array
+    """extract the innermost layer of the duck array
 
     See also
     --------
