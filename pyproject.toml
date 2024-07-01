@@ -20,9 +20,31 @@ packages = ["nested_duck_arrays"]
 [tool.setuptools_scm]
 fallback_version = "9999"
 
-[tool.isort]
-profile = "black"
-skip_gitignore = true
-float_to_top = true
-default_section = "THIRDPARTY"
-known_first_party = "nested_duck_arrays"
+[tool.ruff]
+builtins = ["ellipsis"]
+target-version = "py39"
+
+[tool.ruff.lint]
+extend-safe-fixes = [
+  "TID252", # absolute imports
+]
+ignore = [
+  "E402",  # module level import not at top of file
+  "E501",  # line too long - let black worry about that
+  "E731",  # do not assign a lambda expression, use a def
+]
+select = [
+  "F", # Pyflakes
+  "E", # Pycodestyle
+  "W",
+  "TID", # flake8-tidy-imports (absolute imports)
+  "I", # isort
+  "UP", # Pyupgrade
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["nested_duck_arrays"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+# Disallow all relative imports.
+ban-relative-imports = "all"
