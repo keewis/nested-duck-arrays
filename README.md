@@ -3,6 +3,7 @@
 There have been numerous discussions in 2021-2022 around how to deal with nested duck arrays[^1] [^2].
 
 [^1]: https://github.com/pydata/duck-array-discussion
+
 [^2]: https://discuss.scientific-python.org/t/creating-community-standards-for-meta-arrays-arrays-that-wrap-other-arrays/563
 
 However, not a lot of progress has been made since then, in part because this is such a complex concept (even when limited to simple nesting) and possibly also because the scope might have been a bit too wide.
