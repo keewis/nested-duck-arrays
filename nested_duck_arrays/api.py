@@ -4,7 +4,7 @@ def layers(x):
     Parameters
     ----------
     x : array-like
-        The duck array. If it has the `__duck_arrays__` protocol, it will be
+        The duck array. If it has the ``__array_layers__`` protocol, it will be
         called. Otherwise the type of the duck array will be returned as a 1-tuple.
 
     Returns
@@ -14,7 +14,7 @@ def layers(x):
     """
 
     try:
-        return x.__duck_arrays__()
+        return x.__array_layers__()
     except AttributeError:
         return (type(x),)
 
