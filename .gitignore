@@ -15,6 +15,7 @@ __pycache__/
 .ipynb_checkpoints/
 .hypothesis/
 .pytest_cache
+.prettier_cache
 .coverage
 .coverage.*
 .cache
